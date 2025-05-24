@@ -10,17 +10,24 @@
       padding: 0;
       height: 100%;
       font-family: Arial, sans-serif;
-      background: #000;
+      background-color: #000;
     }
 
     body {
-      background: url('fundo_algoritmo_cripto.jpg') center center no-repeat;
+      background: url('fundo_algoritmo_cripto.jpg') center top no-repeat;
       background-size: cover;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       min-height: 100vh;
       overflow-x: hidden;
+    }
+
+    @media (min-width: 992px) {
+      body {
+        background-size: contain;
+        background-position: center top;
+      }
     }
 
     .container {
